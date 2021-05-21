@@ -1,0 +1,308 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{paralist}
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage{longtable}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Simone \textsc{Barbieri}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & Cagliari, Italy  | 9 September 1990 \\
+\textsc{Address:} & 34 Westby Road, Bournemouth, United Kingdom \\
+\textsc{Phone:} & +44 (0) 7492 314775\\
+\textsc{email:} & \href{mailto:simonebarbieri90@gmail.com}{simonebarbieri90@gmail.com} \\
+\textsc{website:} & \href{http://barbierisimone.com}{http://barbierisimone.com}\\
+&\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+
+\textsc{Current -} & EngD Student at \textsc{Bournemouth University}, Bournemouth \\
+\textsc{September 2015} & \small \textbf{Supervisors}: Dr. Xiasong Yang, Dr. Zhidong Xiao\\
+%& \footnotesize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (\textit{ags, oils, precious} and \textit{base metals}), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{December 2014 -} & Research Fellow at \textsc{University of Cagliari}, Cagliari \\
+\textsc{March 2015} & \textbf{Topic}: \emph{Development of innovative Sematic Web algorithm and related documentation.}\\ 
+& \small \textbf{Advisor}: Prof. Maurizio Atzori\\
+%& \footnotesize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (\textit{ags, oils, precious} and \textit{base metals}), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+%\textsc{Jul 2010-Oct 2011} & Summer Intern at \textsc{Intech Inc}, Chicago \emph{}\\
+%& \footnotesize{Received pre-placed offer from the Exotics Trading Desk as a result of very positive review. Rated ``\emph{truly distinctive}'' for Analytical Skills and Teamwork.}\\
+%\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+%\textsc{Jan-Mar 2011} & Computer Technician at \textsc{Buy More}, Burbank \emph{}\\
+%& \footnotesize{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rp{11cm}}	
+\textsc{September} 2014 & Master Degree in \textsc{Computer Science}, \textbf{University of Cagliari}, Cagliari\\
+& \textbf{Score}: 110/110\\
+& \textbf{Thesis}: \textit{Skeleton Editing and Mesh Reconstruction from Skeleton}
+%\hyperlink{grds}{\hfill | \footnotesize Detailed List of Exams}
+\\
+& \textbf{Brief Description}: the thesis consists of a skeleton editor, capable of a number of useful feature which allow a simple editing for all users, and an inverse skeletonization algorithm which generate a three-dimensional quad-mesh from the created skeleton. \\
+& \small \textbf{Advisor}: Prof. Riccardo Scateni\\
+&\\
+
+
+%------------------------------------------------
+
+\textsc{July} 2012 & Bachelor Degree in \textsc{Computer Science}, \textbf{University of Cagliari}, Cagliari\\
+& \textbf{Score}: 110/110\\
+& \textbf{Thesis}: \textit{Visual Engine for Reading On Network In Comprehensive Acceptation} \\
+& \textbf{Brief Description}: V.E.R.O.N.I.C.A. system is a five people project which has as its primary goal the creation of automated support for reading for people suffering from the disorder of dyslexia, through a web-based application accessible from any platform.\\
+&\small \textbf{Advisors}: Prof. Massimo \textsc{Bartoletti}, Prof.ssa Silvia \textsc{Corso}, Prof. Gianni \textsc{Fenu}, Prof.ssa Barbara \textsc{Pes}, Prof. Riccardo \textsc{Scateni}\\
+&\\
+
+%------------------------------------------------
+
+\textsc{July} 2009 & \textbf{Liceo Scientifico ``Michelangelo''}, Cagliari\\
+&\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Certificates}
+
+\begin{tabular}{rp{11cm}}
+\textsc{March} 2014 & IELTS Certificate \footnotesize(5.5 Speaking - 5.0 Writing - 7.0 Listening - 7.5 Reading)\normalsize\\
+
+\textsc{November} 2012 & CCNA Exploration: Network Fundamentals \footnotesize(by Cisco Networking Academy)\normalsize\\
+
+\textsc{November} 2012 & CCNA Exploration: Routing Protocols and Concepts \footnotesize(by Cisco Networking Academy)\normalsize\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+\begin{tabular}{rp{11cm}}
+	
+\textsc{August} 2016 & \textsc{An interactive editor for curve-skeletons: SkeletonLab}\\
+& \textbf{Website}: \href{http://dx.doi.org/10.1016/j.cag.2016.08.002}{http://dx.doi.org/10.1016/j.cag.2016.08.002}\\
+& \textbf{Abstract}: Curve-skeletons are powerful shape descriptors able to provide higher level information on topology, structure and semantics of a given digital object. Their range of application is wide and encompasses computer animation, shape matching, modelling and remeshing. While a universally accepted definition of curve-skeleton is still lacking, there are currently many algorithms for the curve-skeleton computation (or skeletonization) as well as different techniques for building a mesh around a given curve-skeleton (inverse skeletonization). Despite their widespread use, automatically extracted skeletons usually need to be processed in order to be used in further stages of any pipeline, due to different requirements. We present here an advanced tool, named SkeletonLab, that provides simple interactive techniques to rapidly and automatically edit and repair curve skeletons generated using different techniques proposed in the literature, as well as handcrafting them. The aim of the tool is to allow trained practitioners to manipulate the curve-skeletons obtained with skeletonization algorithms in order to fit their specific pipelines or to explore the requirements of newly developed techniques.\\
+& \small \textbf{Authors}: Barbieri Simone, Meloni Pietro, Usai Francesco, Spano Lucio Davide, Scateni Riccardo\\
+& \\
+	
+\textsc{July} 2016 & \textsc{Enhancing character posing by a sketch-based interaction}\\
+& \textbf{Website}: \href{http://dl.acm.org/citation.cfm?id=2945134}{http://dl.acm.org/citation.cfm?id=2945134}\\
+& \textbf{Abstract}: Sketch as the most intuitive and powerful 2D design method has been used by artists for decades. However it is not fully integrated into current 3D animation pipeline as the difficulties of interpreting 2D line drawing into 3D. Several successful research for character posing from sketch has been presented in the past few years, such as the Line of Action [Guay et al. 2013] and Sketch Abstractions [Hahn et al. 2015]. However both of the methods require animators to manually give some initial setup to solve the corresponding problems. In this paper, we propose a new sketch based character posing system which is more flexible and efficient. It requires less input from the user than the system from [Hahn et al. 2015]. The character can be easily posed no matter the sketch represents a skeleton structure or shape contours.\\
+& \small \textbf{Authors}: Barbieri Simone, Garau Nicola, Hu Wenyu, Xiao Zhidong, Yang Xiaosong\\
+& \\
+
+\textsc{September} 2015 & \textsc{Skeleton Lab: an Interactive Tool to Create, Edit, and Repair Curve-Skeletons}\\
+& \textbf{Website}: \href{https://github.com/kekkooo/SkeletonLab}{https://github.com/kekkooo/SkeletonLab}\\
+& \textbf{Abstract}: Curve-skeletons are well known shape descriptors, able to encode topological and structural information of a shape. The range of applications in which they are used comprises, to name a few, computer animation, shape matching, modelling and remeshing. Different tools for automatically extracting the curve-skeleton for a given input mesh are currently available, as well as inverse skeletonization tools, where a user-defined skeleton is taken as input in order to build a mesh that reflects the encoded structure. Although their use is broad, an automatically extracted curve-skeleton is usually not well-suited for the next pipeline step in which they will be used. We present a tool for creating, editing and repairing curve-skeletons whose aim is to allow users to obtain, within minutes, curve-skeletons that are tailored for their specific task.\\
+& \small \textbf{Authors}: Barbieri Simone, Meloni Pietro, Usai Francesco, Scateni Riccardo
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+\begin{longtable}{rp{11cm}}
+
+\textsc{April} 2014 & \textsc{Voronoi Clarke \& Wright Algorithm}\\
+& \textbf{Website}: \href{https://github.com/simonebarbieri/Clark-Wright}{https://github.com/simonebarbieri/Clark-Wright}\\
+& Final Project for the unit \textit{Operative Research} for the Master Degree in Computer Science at the University of Cagliari. A five people project which implements a modified version of Clarke and Wright Algorithm, for the vehicle routing problem, using the Voronoi tasselation.\\
+& \small \textbf{Authors}: Barbieri Simone, Loddo Andrea, Mameli Emanuele, Muntoni Alessandro, Pompianu Livio\\
+& \\
+
+\textsc{September} 2013 & \textsc{Convex Hull 3D}\\
+& \textbf{Website}: \href{https://github.com/simonebarbieri/ConvexHull3D}{https://github.com/simonebarbieri/ConvexHull3D}\\
+& Final Project for the unit \textit{Algorithms and Data Structures 2} for the Master Degree in Computer Science at the University of Cagliari. It implements a Convex Hull of a set of points in a 3D space.\\
+& \\
+
+\textsc{February} 2013 & \textsc{BlueBlueRunning}\\
+& Final Project for the unit \textit{Operating System 2} for the Master Degree in Computer Science at the University of Cagliari. A five people project which consists in an Android application which traks user's running trainings and it allows the users to save locally (in .GPX format) and share them with Google services such as Google Spreadsheet, Google Drive, Google Maps and Google Earth.\\
+& \small \textbf{Authors}: Barbieri Simone, Loddo Andrea, Mameli Emanuele, Muntoni Alessandro, Pompianu Livio\\
+& \\
+
+\textsc{January} 2011 & \textsc{Shooter Pacman}\\
+& \textbf{Website}: \href{https://github.com/simonebarbieri/ShooterPacman}{https://github.com/simonebarbieri/ShooterPacman}\\
+& Final Project for the unit \textit{Operating System} for the Bachelor Degree in Computer Science at the University of Cagliari. A version of the famous videogame Pacman, in which Pacman and the ghost can shoot.\\
+& \\
+
+\end{longtable}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+\textsc{English:} & IELTS level 6.5 \footnotesize(5.5 Speaking - 5.0 Writing - 7.0 Listening - 7.5 Reading)\normalsize\\
+
+\textsc{Italian:} & Mothertongue\\
+&\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\begin{tabular}{rl}
+Basic Knowledge: & {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}, OCaml, Assembly, Wordpress, Git, JQuery\\
+
+Intermediate Knowledge: & \textsc{Linux}, HTML, CSS, PHP, Android SDK, OpenGL, Javascript,\\ 
+& PostgreSQL, MySQL\\
+
+Advance Knowledge: & C, C++, Qt, Java\\
+&\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{compactitem}
+  
+  \item Experience in group working. Most of the university project I have worked on have been carried out in groups of five people.\\
+  \item Experience in presenting projects carried out in Power Point presentations with different types of audiences.\\
+  \item Expertise in project planning, including the ability in creating documents such as Requirements Analysis and Project Plan.\\
+  \item Ability in coordinating small workgroups.\\
+  
+\end{compactitem}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+
+Technology, Open-Source, Programming, Comics, Video games, Movies, TV Shows, Fencing (6 years), Basketball (2 years), Swimming (5 years), Travelling
+
+%----------------------------------------------------------------------------------------
+
+%\newpage
+
+%\bigskip
+%\bigskip
+%\bigskip
+%\hrule
+%\bigskip
+%\bigskip
+
+
+%----------------------------------------------------------------------------------------
+%	GRADE TABLES
+%----------------------------------------------------------------------------------------
+
+%\par{\centering\Large \hypertarget{grds}{Master Degree in \textsc{Computer Science}}\par}\large{\centering Grades\par}\normalsize
+
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%\\
+%Algoritmi e Strutture Dati 2 & 27 & 6\\[0.1cm]
+%Architetture di Networking & 27 & 6\\[0.1cm]
+%Basi di Dati 2 & 29 & 6\\[0.1cm]
+%Computazione su rete & 30 & 6\\[0.1cm]
+%Data Mining (Valuation) & 24 & 6\\[0.1cm]
+%Elaborazione e Analisi di Immagini & 30 & 9\\[0.1cm]
+%Matematica Computazionale & 30L & 6\\[0.1cm]
+%Metodi Formali & 28 & 9\\[0.1cm]
+%Sistemi Operativi & 27 & 6\\[0.1cm]
+%Biometria e Sicurezza (Valuation) & 23 & 6\\[0.1cm]
+%Fondamenti di Sicurezza & 30 & 6\\[0.1cm]
+%Ricerca Operativa & 27 & 6\\[0.1cm]
+%Architettura degli Elaboratori &  & 6\\[0.1cm]
+%Prova Finale &  & 30\\[0.1cm]
+%\\\cline{1-3}\\
+%Total & 28.5 & 120
+%\end{tabular}
+%\end{center}
+%\bigskip
+%\hrule
+%\bigskip
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
